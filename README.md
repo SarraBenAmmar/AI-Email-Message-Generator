@@ -1,271 +1,193 @@
-🚀 AI Email & Content Generator
-<div align="center">
-https://img.shields.io/badge/Frontend-React-61DBFB?logo=react&logoColor=white
-https://img.shields.io/badge/Backend-FastAPI-009688?logo=fastapi&logoColor=white
-https://img.shields.io/badge/Language-Python-3776AB?logo=python&logoColor=white
-https://img.shields.io/badge/Language-JavaScript-F7DF1E?logo=javascript&logoColor=black
-https://img.shields.io/badge/License-MIT-green
+# 🚀 AI-Powered Content & Email Generator
 
-A powerful AI-powered content generation platform built with modern technologies
+<div align="center">
+
+![React](https://img.shields.io/badge/Frontend-React-61DAFB?logo=react&logoColor=white)
+![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688?logo=fastapi&logoColor=white)
+![Python](https://img.shields.io/badge/Language-Python-3776AB?logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/Language-JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![License](https://img.shields.io/badge/License-MIT-brightgreen)
+
+**Next-Gen AI Content Generation Platform**
 
 </div>
-✨ About The Project
-AI Email & Content Generator is a cutting-edge web application that leverages OpenRouter AI with the Mistral model to create high-quality, context-aware content across multiple formats. Whether you need professional communications or creative content, this tool streamlines your writing process with AI-powered assistance.
 
-🎯 Key Features
-📧 Smart Email Composition - Generate professional emails for business, marketing, or personal use
+## 📋 Table of Contents
+- [🌟 Overview](#-overview)
+- [✨ Features](#-features)
+- [📁 Project Structure](#-project-structure)
+- [🚀 Installation](#-installation)
+- [⚙️ Configuration](#️-configuration)
+- [💡 Usage](#-usage)
+- [🔌 API Documentation](#-api-documentation)
+- [🛠 Development](#-development)
+- [🐛 Troubleshooting](#-troubleshooting)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
 
-📱 Social Media Content - Create engaging posts for platforms like Twitter, LinkedIn, and Instagram
+## 🌟 Overview
+Modern web platform leveraging **OpenRouter AI** with Mistral models to generate:
+- 📧 Professional emails
+- 📱 Social media content
+- 🎬 Video scripts
+- 💡 Creative ideas
 
-🎬 Video Scripts - Develop compelling scripts for YouTube and other video content
+```text
+Core Stack:
+◼ Frontend: React 18+ with Vite
+◼ Backend: FastAPI + Python 3.10+
+◼ Styling: CSS Modules + Neon UI
+```
 
-💡 Creative Brainstorming - Generate ideas, messages, and creative content on demand
+## ✨ Features
+### 🎯 Core Capabilities
+| Category | Description | Use Cases |
+|----------|-------------|-----------|
+| 📧 Email | Business communications | Client outreach |
+| 📱 Social Media | Platform-specific posts | Campaign management |
+| 🎬 Video Scripts | YouTube/Tutorials | Video production |
+| 💡 Ideas | Brainstorming | Content strategy |
 
-⚡ Real-time Generation - Instant AI responses with a modern, intuitive interface
+### ⚡ Technical Highlights
+```text
+✔ Real-time generation
+✔ SSE Streaming
+✔ 5+ AI model support
+✔ Responsive UI
+✔ Advanced error handling
+```
 
-🎨 Futuristic UI - Beautiful glowing design with smooth user experience
-
-🖼️ Application Preview
-<div align="center">
-https://github.com/user-attachments/assets/0729fd7d-f845-4473-a574-129020aacc7f
-
-Modern dashboard with glowing effects and real-time content generation
-
-</div>
-🏗️ Project Architecture
-Technology Stack
-Layer	Technology	Purpose
-Frontend	React.js	Modern, responsive user interface
-Backend	FastAPI (Python)	High-performance API server
-AI Integration	OpenRouter API	Access to Mistral and other AI models
-Styling	CSS3 with modern effects	Futuristic glowing UI design
-Project Structure
-bash
+## 📁 Project Structure
+```text
 ai-email-generator/
-│
-├── 📁 frontend/                 # React Application
+├── frontend/
 │   ├── src/
-│   │   ├── components/         # Reusable UI components
-│   │   ├── services/          # API integration services
-│   │   ├── styles/            # CSS and styling files
-│   │   └── utils/             # Helper functions
-│   ├── public/                # Static assets
-│   └── package.json           # Dependencies and scripts
+│   │   ├── assets/       # Icons & logos
+│   │   ├── components/   # React components
+│   │   └── styles/       # CSS themes
+│   └── vite.config.js
 │
-├── 📁 backend/                # FastAPI Server
-│   ├── main.py               # Main application file
-│   ├── config.py             # Configuration settings
-│   ├── services/             # Business logic and AI integration
-│   ├── models/               # Data models
-│   ├── requirements.txt      # Python dependencies
-│   └── .env.example          # Environment variables template
+├── backend/
+│   ├── core/             # Business logic
+│   ├── models/           # Pydantic models
+│   └── main.py           # Entry point
 │
-└── 📄 README.md              # Project documentation
-🚀 Quick Start Guide
-Prerequisites
-Before you begin, ensure you have the following installed:
+└── docs/                 # Technical documentation
+```
 
-Node.js (version 14 or higher)
+## 🚀 Installation
+### Prerequisites
+- Node.js 18+
+- Python 3.10+
+- OpenRouter account
 
-Python (version 3.8 or higher)
-
-pip (Python package manager)
-
-Step 1: Clone the Repository
-bash
-# Clone the project
-git clone https://github.com/YOUR-USERNAME/ai-email-generator.git
-
-# Navigate to project directory
-cd ai-email-generator
-Step 2: Backend Setup (FastAPI)
-Navigate to backend directory:
-
-bash
+### Backend Setup
+```bash
 cd backend
-Create and activate virtual environment:
-
-bash
-# Create virtual environment
-python -m venv venv
-
-# Activate on Windows
-venv\Scripts\activate
-
-# Activate on macOS/Linux
-source venv/bin/activate
-Install Python dependencies:
-
-bash
+python -m venv .venv
+source .venv/bin/activate  # Linux/Mac
 pip install -r requirements.txt
-Set up environment variables:
+```
 
-Copy .env.example to .env
-
-Add your OpenRouter API key:
-
-text
-OPENROUTER_API_KEY=your_api_key_here
-Start the backend server:
-
-bash
-python main.py
-✅ Backend running at: http://localhost:8000
-
-Step 3: Frontend Setup (React)
-Open a new terminal and navigate to frontend:
-
-bash
+### Frontend Setup
+```bash
 cd frontend
-Install Node.js dependencies:
-
-bash
 npm install
-Start the React development server:
+npm run dev
+```
 
-bash
-npm start
-✅ Frontend running at: http://localhost:3000
+## ⚙️ Configuration
+`.env` (Backend):
+```env
+OPENROUTER_API_KEY="sk-or-v1-..."
+MODEL_NAME="mistralai/mixtral-8x7b-instruct"
+MAX_TOKENS=2000
+```
 
-🔧 Configuration
-Environment Variables
-Create a .env file in the backend directory with the following variables:
+## 💡 Usage
+1. Navigate to `http://localhost:3000`
+2. Select content type
+3. Configure parameters:
+   ```text
+   - Primary topic
+   - Tone (Professional/Creative)
+   - Keywords
+   - Desired length
+   ```
+4. Instant generation with live preview
 
-env
-OPENROUTER_API_KEY=your_openrouter_api_key_here
-OPENROUTER_MODEL=mistralai/mistral-7b-instruct
-API_HOST=localhost
-API_PORT=8000
-FRONTEND_URL=http://localhost:3000
-Getting Your API Key
-Visit OpenRouter
-
-Create an account and generate an API key
-
-Copy the key into your .env file
-
-💻 Usage Guide
-Generating Content
-Select Content Type - Choose from email, social media, scripts, or creative content
-
-Provide Context - Enter your topic, tone, and any specific requirements
-
-Generate - Click the generate button for instant AI-powered content
-
-Copy & Use - Copy the generated content directly to your applications
-
-Available Content Types
-Content Type	Best For	Example Use Cases
-Professional Email	Business communication	Sales pitches, follow-ups, introductions
-Social Media Post	Engagement content	Twitter threads, LinkedIn posts, Instagram captions
-Video Script	Content creation	YouTube videos, tutorials, presentations
-Creative Ideas	Brainstorming	Marketing campaigns, project ideas, content planning
-🛠️ API Endpoints
-Content Generation
-http
-POST /api/generate
+## 🔌 API Documentation
+### Content Generation
+```http
+POST /api/v1/generate
 Content-Type: application/json
 
 {
   "content_type": "email",
-  "topic": "Follow-up meeting",
-  "tone": "professional",
-  "additional_context": "Need to follow up on last week's discussion"
+  "language": "en",
+  "parameters": {
+    "recipient": "Client XYZ",
+    "key_points": ["Follow-up", "Oct 25 meeting"]
+  }
 }
-Health Check
-http
-GET /api/health
-Returns API status and version information
+```
 
-🔒 Security Features
-API Key Protection - Secure handling of AI service credentials
+Response:
+```json
+{
+  "content": "Dear [Name], ...",
+  "tokens_used": 142,
+  "generation_time": 1.45
+}
+```
 
-Input Validation - Comprehensive validation of all user inputs
+## 🛠 Development
+### Essential Commands
+| Action | Command |
+|--------|---------|
+| Start backend | `uvicorn main:app --reload` |
+| Build frontend | `npm run build` |
+| Run tests | `pytest -v` |
 
-CORS Configuration - Proper cross-origin resource sharing settings
+### Technical Architecture
+```mermaid
+graph TD
+    A[Frontend] -->|SSE| B(Backend)
+    B -->|API| C[[OpenRouter]]
+    C -->|Streaming| B
+    B -->|Markdown| A
+```
 
-Error Handling - Graceful error management without exposing sensitive data
+## 🐛 Troubleshooting
+Common Issues:
+1. CORS Errors:
+   ```bash
+   # backend/main.py
+   app.add_middleware(
+       CORSMiddleware,
+       allow_origins=["*"]
+   )
+   ```
+2. Invalid API Key:
+   ```text
+   Verify credits at openrouter.ai
+   ```
 
-🤝 Contributing
-We welcome contributions! Please follow these steps:
+## 🤝 Contributing
+Recommended Workflow:
+1. Create branch: `feat/new-feature`
+2. Follow standards:
+   ```text
+   ◼ Python: Black + Flake8
+   ◼ JS: ESLint + Prettier
+   ```
+3. Add tests for new features
 
-Fork the repository
-
-Create a feature branch (git checkout -b feature/amazing-feature)
-
-Commit your changes (git commit -m 'Add amazing feature')
-
-Push to the branch (git push origin feature/amazing-feature)
-
-Open a Pull Request
-
-Development Guidelines
-Follow PEP 8 for Python code
-
-Use ESLint for JavaScript/React code
-
-Write meaningful commit messages
-
-Update documentation for new features
-
-📝 Troubleshooting
-Common Issues
-Backend won't start:
-
-Verify Python version (3.8+ required)
-
-Check if virtual environment is activated
-
-Ensure all dependencies are installed
-
-Frontend connection issues:
-
-Confirm backend is running on port 8000
-
-Check CORS configuration
-
-Verify API endpoints in frontend services
-
-API key errors:
-
-Ensure OpenRouter API key is valid
-
-Check .env file location and formatting
-
-Verify account credits on OpenRouter
-
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-👨‍💻 Author
-Sara Ben Ammar
-
-GitHub: @YourUsername
-
-Email: sarrahhbam@gmail.com
-
-🙏 Acknowledgments
-OpenRouter for providing AI model access
-
-Mistral AI for the powerful language model
-
-React & FastAPI communities for excellent documentation and support
+## 📄 License
+MIT License - [View Full License](LICENSE)
 
 <div align="center">
-Ready to create amazing content? 🚀
-Star this repository if you find it helpful!
-
+<br/>
+📧 Contact: sarrahhbam@gmail.com<br/>
+⭐ Star this repo if you find it useful!
 </div>
-🔄 Future Enhancements
-Template library for common content types
-
-Content history and saving functionality
-
-Multiple AI model support
-
-Export functionality (PDF, DOCX)
-
-Team collaboration features
-
-Advanced customization options
-
