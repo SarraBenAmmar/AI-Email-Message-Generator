@@ -9,6 +9,14 @@
 ![License](https://img.shields.io/badge/License-MIT-brightgreen)
 
 **Next-Gen AI Content Generation Platform**
+<div align="center">
+  <video 
+    src="https://github.com/SarraBenAmmar/AI-Email-Message-Generator/raw/main/Enregistrement%202025-11-30%20173043.mp4" 
+    width="750" 
+    controls>
+  </video>
+</div>
+
 
 </div>
 
